@@ -88,4 +88,4 @@ Similarly, `flag1` and `flag2` are extracted by solving their corresponding poly
 #### Flag.
 Combining the pieces of the flag we've extracted, we get the flag. `RITSEC{hey_im_just_w4ffl1n9_s0m3th1ng_rand0m_rn_th1s_is_cr4zy_it5_r3411y_n1ce_4nd_sunny_outs1d3_ev3n_th0ugh_its_f411_wh1ch_f33ls_w3ird_t0_me_lik3_i_th1nk_it_sh0uld_be_at_l345t_4_l1ttl3_b1t_c0ld3r_ugh}`
 
-<small>(Some code for this writeup is partially adapted from [here](https://github.com/rkm0959/Inequality_Solving_with_CVP/).)</small>
+<sub><sup>(Some code for this writeup is partially adapted from [here](https://github.com/rkm0959/Inequality_Solving_with_CVP/).)</sup></sub>
