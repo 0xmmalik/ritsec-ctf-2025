@@ -1,4 +1,4 @@
-# RITSEC CTF 2025 Writeup — shaking my temple
+# RITSEC CTF 2025 Writeup — Shaking My Temple
 
 #### Challenge Setup.
 We have to meet a bunch of constraints to generate a key. If we submit a valid key to the server, we get the flag! The constraints, written out in a much easier-to-understand way, are:
