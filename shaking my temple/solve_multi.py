@@ -4,7 +4,7 @@ solver = Solver()
 
 k = [BitVec(f'k_{i}', 8) for i in range(32)]
 
-solver.add((k[0] ^ k[1]) + (k[2] * k[3]) == 1000)
+solver.add((k[0] ^ k[1]) + (k[2] * k[3]) == 232)
 solver.add((k[4] * k[4] + k[5]) % 256 == k[6])
 solver.add(k[7] + (k[8] * k[9]) == (k[10] * 5 + 10) % 100)
 solver.add((k[11] ^ k[12]) + (k[13] * k[14]) == 200)
