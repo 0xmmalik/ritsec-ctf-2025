@@ -24,6 +24,6 @@ if __name__ == "__main__":
     key = input("Yarrr! Enter yer key to claim yer treasure!\n\n> ")
     try:
         check_valid(key)
-        print("\nYarrrr matey! Here be yer booty! RITSEC{l04ds_and_l0ad5_0f_g0ld!}")
+        print("\nYarrrr matey! Here be yer booty! RS{l04ds_and_l0ad5_0f_g0ld!}")
     except AssertionError:
         print("\nYarrrr matey! Ye be tryin to plunder my booty! To the plank with ye, ye scallywag!")
