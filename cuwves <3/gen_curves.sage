@@ -2,7 +2,7 @@ import os
 
 from sage.all import *
 
-flag = open("flag.txt", "rb").read().strip(b"RITSEC{}")
+flag = open("flag.txt", "rb").read().strip(b"RS{}")
 assert len(flag) == 192
 
 while True:

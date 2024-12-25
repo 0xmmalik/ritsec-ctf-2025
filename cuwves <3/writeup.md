@@ -66,7 +66,7 @@ def solve(M, lbounds, ubounds, weight=None):
     return result, applied_weights, fin
 ```
 
-Now, let's recover the flag. The flag is encoded in the polynomial coefficients,so using the hyperelliptic curve polynomials, we can perform symbolic operations to match the form of the flag with known polynomial equations. For the third part of the flag, `flag3`, we perform symbolic operations to compute a relation between the polynomial `f2`, the known curve, and a shifted version of the Jacobian point.
+Now, let's recover the flag. The flag is encoded in the polynomial coefficients, so using the hyperelliptic curve polynomials, we can perform symbolic operations to match the form of the flag with known polynomial equations. For the third part of the flag, `flag3`, we perform symbolic operations to compute a relation between the polynomial `f2`, the known curve, and a shifted version of the Jacobian point.
 
 ```sage
 v_bar_flag3 = -V2.subs({x: X_flag3}) + (A + B * X_flag3) * U2.subs({x: X_flag3})
@@ -86,6 +86,6 @@ flag3 = int.to_bytes(int(flag3_root.lift()), 64, 'big')
 Similarly, `flag1` and `flag2` are extracted by solving their corresponding polynomial systems using Groebner basis. These polynomials are too complex for SAGE to solve, so we can input the system into something like [Magma](http://magma.maths.usyd.edu.au/calc/). The full solve script can be found in [`solve.sage`](https://github.com/0xmmalik/ritsec-ctf-2025/blob/main/cuwves%20%3C3/solve.sage).
 
 #### Flag.
-Combining the pieces of the flag we've extracted, we get the flag. `RITSEC{hey_im_just_w4ffl1n9_s0m3th1ng_rand0m_rn_th1s_is_cr4zy_it5_r3411y_n1ce_4nd_sunny_outs1d3_ev3n_th0ugh_its_f411_wh1ch_f33ls_w3ird_t0_me_lik3_i_th1nk_it_sh0uld_be_at_l345t_4_l1ttl3_b1t_c0ld3r_ugh}`
+Combining the pieces of the flag we've extracted, we get the flag. `RS{hey_im_just_w4ffl1n9_s0m3th1ng_rand0m_rn_th1s_is_cr4zy_it5_r3411y_n1ce_4nd_sunny_outs1d3_ev3n_th0ugh_its_f411_wh1ch_f33ls_w3ird_t0_me_lik3_i_th1nk_it_sh0uld_be_at_l345t_4_l1ttl3_b1t_c0ld3r_ugh}`
 
 <sub><sup>(Some code for this writeup is partially adapted from [here](https://github.com/rkm0959/Inequality_Solving_with_CVP/).)</sup></sub>
