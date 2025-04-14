@@ -1,0 +1,5 @@
+services:
+  crypto_thing:
+    build: .
+    ports:
+      - "12345:12345"
